@@ -2,9 +2,9 @@
 
 ## Definition 1.1
 
-A subset U of R (real numbers) is **open** if:
+A subset *U* of *R* (real numbers) is **open** if:
 
- around each point *p* of U there is an open interval *(p-h, p+h)* wholly contained in U.
+ around each point *p* of *U* there is an open interval *(p-h, p+h)* wholly contained in *U*.
 
  ```
  (p - h, p + h) ⊆ U
@@ -28,14 +28,15 @@ A subset U of R (real numbers) is **open** if:
 
  **R is open**
 
- **The empty set ∅ is vacuosuly open**
+ **The empty set ∅ is vacuously open**
 
  A vacous truth is  conditional that is only true because the antecedent cannot be satisfied.
 
  **The closed interval [a, b] is not open in R**
 
  ```
- If you take p to be a, then every open interval (p - h, p + h) contains points outside of [a, b]
+ If you take p to be a,
+ then every open interval (p - h, p + h) contains points outside of [a, b]
  ```
 
  **A singleton is not open in R**
@@ -43,3 +44,43 @@ A subset U of R (real numbers) is **open** if:
  ```
  {a} = [a, a] => closed interval => not open
  ```
+
+## Definition 1.8
+
+Continuity:
+
+Let *S* be an open subset of *R*.
+
+A function `f:S -> R` is **continuous** on S <=> for each *a ∈ S* and each *ε > 0* there is a *δ > 0* such that
+
+```
+|x - a| < δ => |f(x) - f(a)| < ε
+```
+
+Speaking very loosely:
+
+*f* is **continous** at *a* if *f(x)* is close to *f(a)* when *x* is close to *a*.
+
+## Definition 1.10
+
+Let `f: A -> B` be a function.
+
+- If *T* is a **subset** of *B*
+- then the **inverse image** of *T* **under** *f* is:
+- the subset of *A* consisting of all the elements of *A* that *f* maps into *T*
+
+```
+a ∈ f^-1(T) <=> f(a) ∈ T
+```
+
+## Example
+
+If `f:R -> R` is defined by `f(x) = x^2` then
+
+```
+f^-1([0,9]) = (-3, 3)
+
+f^-1([-5, -4]) = ∅
+
+f^-1(R) = R
+```
