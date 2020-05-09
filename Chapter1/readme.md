@@ -10,6 +10,7 @@ A subset *U* of *R* (real numbers) is **open** if:
  (p - h, p + h) ⊆ U
  ```
 
+------------------------
  You should think of an *open set* as containing none of the points at the edge of the set.
 
  ## Examples
@@ -30,6 +31,7 @@ A subset *U* of *R* (real numbers) is **open** if:
 
  **The empty set ∅ is vacuously open**
 
+----------------
  A vacous truth is  conditional that is only true because the antecedent cannot be satisfied.
 
  **The closed interval [a, b] is not open in R**
@@ -84,3 +86,80 @@ f^-1([-5, -4]) = ∅
 
 f^-1(R) = R
 ```
+
+## Theorem 1.12
+
+Let S be an *open* subset of R.
+
+A function f: S -> R is *continous* <=> the *inverse* image f^-1(U) under f of each open set U is *open*
+
+Proof:
+
+=>
+
+```
+Suppose f is continuous and let U be open.
+
+No reason f^-1(U) can't be the empty set (also open).
+
+If a ∈ f^-1(U) then f(a) ∈ U.
+But U is open so
+(f(a) - ε, f(a) + ε) ⊆ U
+
+By continuity:
+
+|x - a| < δ => |f(x) - f(a)| < ε
+
+=> (a - δ, a + δ) ⊆ f^-1((f(a) - ε, f(a) + ε))
+                  ⊆ f^-1(U)
+
+Therefore f^-1(U) is open
+```
+
+<=
+
+```
+Suppose the inverse image of each open set is open
+
+Let a ∈ S
+
+(f(a) - ε, f(a) + ε) is open => f^-1(f(a) - ε, f(a) + ε) is open
+
+By open set: contains (a - δ, a + δ) so
+
+|x - a| < δ => x ∈ (a - δ, a + δ)
+            => x ∈ f^-1((f(a) - ε, f(a) + ε)
+           <=> f(x) ∈ (f(a) - ε, f(a) + ε)
+           <=> |f(x) - f(a)| < ε
+
+=> f is continuous at a           
+```
+
+If *f* is not continuous one can find an open subset U in the codomain of *f* such that the inverse image f^-1(U) of U under f is not open.
+
+## Theorem 1.15
+
+Let `f: R -> R`
+
+and `g: R -> R` be continuous.
+
+Then `g o f: R -> R` is also continuous.
+
+## Definition 1.16
+
+Let *S* be an open subset of *R*. A function `f: S -> R` is called **open** if the image of every open subset *V* of *S* is open in **R**
+
+-----------
+Note that **not every continuous map is open**.
+
+For example: `f(x) = 7` is not an open map.
+
+## Thereom 1.19
+
+Let τ be the collection of all open subsets in *R*. Then
+
+1. τ contains *R* and the empty set ∅
+
+2. τ is **closed** under arbitrary unions
+
+3. τ is **closed** under finite intersections

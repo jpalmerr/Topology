@@ -8,7 +8,7 @@
 
   The set of all fractions *a/b* where *a* and *b* are integers and *b =/0*
 
-- R The set of real numbers. This includes things like π, √2, *−285*, *3/7*
+- **R** The set of real numbers. This includes things like π, √2, *−285*, *3/7*
 , *log6*
 .3(π), etc.
 
@@ -50,6 +50,6 @@ For example, `∀ squares D, D is a rectangle`.
 - **\** remove from a set
 
   Given two sets S and T, `S \T` is used to denote the set
-  `{x|x ∈ S and x /∈ T}` 
+  `{x|x ∈ S and x /∈ T}`
 
   For example {1, 2, 3} \ {3, 4, 5} = {1, 2}
