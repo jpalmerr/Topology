@@ -32,7 +32,7 @@ A subset *U* of *R* (real numbers) is **open** if:
  **The empty set ∅ is vacuously open**
 
 ----------------
- A vacous truth is  conditional that is only true because the antecedent cannot be satisfied.
+ A vacuous truth is  conditional that is only true because the antecedent cannot be satisfied.
 
  **The closed interval [a, b] is not open in R**
 
@@ -154,7 +154,7 @@ Note that **not every continuous map is open**.
 
 For example: `f(x) = 7` is not an open map.
 
-## Thereom 1.19
+## Theorem 1.19
 
 Let τ be the collection of all open subsets in *R*. Then
 
@@ -163,3 +163,28 @@ Let τ be the collection of all open subsets in *R*. Then
 2. τ is **closed** under arbitrary unions
 
 3. τ is **closed** under finite intersections
+
+## Example
+
+**The intersection of the infinite family of open intervals**
+
+```
+(-1/n, 1/n) (n = 1, 2, 3...)
+
+is the singleton
+
+{0}
+```
+ and no singleton is open => the intersection is closed.
+
+ **infinite unions**
+
+ If *a, b ∈ R* then
+
+ *(-∞, a) = U^<sup>∞</sup><sub>n-1</sub>(a - n, a)*
+
+ and
+
+*(b, ∞) = U^<sup>∞</sup><sub>n-1</sub>(b, b + n)*
+
+are **union of open sets** => open.  
