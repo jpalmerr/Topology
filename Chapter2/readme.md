@@ -1,5 +1,9 @@
 # Metric Spaces
 
+[Metrics Spaces](#definition) |
+[Open Balls in Metric Spaces](#open-balls-in-metric-spaces) |
+[Open Sets in Metric Spaces](#open-sets-in-metric-spaces)
+
 ## Definition
 
 A **metric** on a set *X* is a function
@@ -97,3 +101,69 @@ d(x, x) = 0 and d(x, y) = 1 if x =/y
 ```
 
 That is, distinct points are distance 1 apart.
+
+# Open Balls in Metric Spaces
+
+## Definition 2.12
+
+- Let *(X, d)* be a metric space
+- Let *a ∈ X*
+- Let *r ∈ R, r > 0*
+
+The **open ball** with **centre** *a*, **radius** *r* is the set
+
+```
+B(a, r) = {x ∈ X: d(a, x) < r}
+```
+consisting of all points of X whose distance from *a* is less than *r*
+
+## Examples
+
+Consider the metric space *(R, d)*. An **open ball** *B(a, r)* in the real line *R*
+
+```
+B(a, r) = {x ∈ R: d(a, x) < r}
+        = {x ∈ R: |x - a| < r}
+```
+is an open interval *(a - r, a + r)*
+
+Consider the metric space *(C, d)*. For *a ∈ C* and r > 0, the
+**open ball** *B(a, r)* in the complex plane *C*.
+
+```
+B(a, r) = {z ∈ C: d(a, z) < r}
+        = {z ∈ C: |z - a| < r}
+```
+is the disc consisting of all points interior to the circle with centre *a* and radius *r*
+
+
+Consider the metric space *(X, d)* with the **discrete metric** *d*.
+
+For *a ∈ X* and *r > 0*, the open ball
+
+```
+B(a, r) = {z ∈ X: d(a, z) < r}
+
+Recall that
+
+d(x,x) = 0 and d(x, y) = 1 if x =/ y
+
+=>
+
+B(a, r) = { {a} if r ≤ 1
+          { X if r > 1
+```
+
+-----------------------
+
+Open balls need not be spherical!
+
+# Open Sets in Metric Spaces
+
+We shall now use open balls to define a topology on any metric space.
+
+## Definition 2.20
+
+A subset U of a metric space (X, d) is **open** if and only if for each *u ∈ U* there is a positive real number *r* such that *B(u, r) ⊆ U*
+
+Thus **an open set in a metric space is one which contains an open ball about each of its points**.
